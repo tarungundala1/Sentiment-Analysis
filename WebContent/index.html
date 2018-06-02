@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+	body { 
+    background-image:url("deakin.jpg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+}
+</style>
+<body>
+
+<form name="loginForm" method="post" action="Page2.html">
+<table width="30%" height="35%" bgcolor="#EFDFDB" align="center">
+
+<tr>
+<td colspan=2><center><font face="Comic Sans MS" size=4><b>Sentiment Analysis Login</b></font></center></td>
+</tr>
+
+<tr>
+<td>Username:</td>
+<td><input type="text" size=35 name="userid"></td>
+</tr>
+
+<tr>
+<td>Password:</td>
+<td><input type="Password" size=35 name="pwd"></td>
+</tr>
+
+<tr>
+			<td colspan="2" height="59">
+			<p align="center"><input type="submit" value="Submit" name="B1"  onclick="return check(this.form)" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="reset" value="Reset" name="B2"></td>
+		</tr>
+
+</table>
+</form>
+<script language="javascript">
+function check(form)
+{
+
+if(form.userid.value == "deakin" && form.pwd.value == "deakin")
+{
+	return true;
+}
+else
+{
+	alert("Error Password or Username")
+	return false;
+}
+}
+</script>
+	
+</body>
+</html>
